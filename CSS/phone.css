@@ -1,0 +1,140 @@
+.header .fa-bars {
+    display: inline-block;
+
+}
+
+.header {
+    position: relative;
+    z-index: 35;
+}
+
+.navbar-lists {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    background-color: #1e2863;
+    opacity: 5;
+    flex-direction: column;
+    position: absolute;
+    /* right: 0px; */
+    right: -320px;
+    top: 70px;
+    padding: 2rem 0;
+    height: auto;
+    z-index: 5;
+    transition: 5s;
+}
+
+.navbar-show {
+    display: flex;
+    position: absolute;
+    transition: all 1s ease-in-out 0.3s;
+    right: 0;
+
+}
+
+.main-interface {
+    height: 500px;
+}
+
+.hero {
+    height: 86%;
+}
+
+.hero-content {
+    width: 75%;
+}
+
+.hero-heading {
+    font-size: 30px;
+}
+
+.hero-detail {
+    font-size: 16px;
+}
+
+/* ---product--- */
+.products {
+    padding: 5rem 0;
+}
+
+.products-head-heading {
+    font-size: 4rem;
+}
+
+.products-boxs {
+    flex-direction: column;
+    justify-items: center;
+    width: 80%;
+}
+
+.product-box-heading {
+    font-size: 24px;
+}
+
+/* -----testimonials----- */
+.testimonials {
+    padding: 5rem 0;
+}
+
+.testimonials-head-heading {
+    font-size: 4rem;
+}
+
+
+.testimonials-box {
+    flex-direction: column;
+}
+
+.testimonials-box-image {
+    width: 100%;
+    height: 250px;
+    border-radius: 1rem 1rem 0px 0px;
+}
+
+.testimonials-content-heading {
+    text-align: left;
+    font-size: 2.3rem;
+}
+
+
+/* -----gallery----- */
+.gallery-box {
+    flex-direction: column;
+}
+
+.gallery-box-image {
+    width: 270px;
+    height: 270px;
+    border-radius: 50% 50%;
+}
+
+/* -----contact----- */
+.contact-boxs {
+    justify-content: center;
+    grid-template-columns: 1fr;
+}
+
+.contact-box {
+    width: 90%;
+    margin: auto;
+}
+
+.contact-content {
+    width: 70%;
+}
+
+.contact-heading {
+    font-size: 3rem;
+
+}
+
+.contact-detail {
+    font-size: 1.4rem;
+}
+
+.contact::before::after {
+    width: 0%;
+    content: "";
+}

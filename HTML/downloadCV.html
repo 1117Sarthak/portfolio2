@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download CV</title>
+    <link rel="stylesheet" href="../CSS/downloadCV.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body id="body">
+    <ion-icon name="arrow-back-outline" class="icon" onclick="page1()"></ion-icon>
+    <div class="wrapper">
+        <section class="image-container">
+            <img src="../IMG/resume.png" id="data" alt="Download CV" class="image" />
+            <div class="overlay">
+                <img src="../IMG/Sarthak .png" class="img" alt="">
+                <h1>Sarthak's Resume</h1>
+                <p>Dynamic and results-driven professional with a proven track record in Technical, excelling in MERN.
+                </p>
+            </div>
+        </section>
+
+        <section class="buttons">
+            <a href="../Resume.pdf" download="Resume" class="btn" id="download-btn">Download</a>
+            <a href="../Resume.pdf" class="btn" id="print-btn" onclick="printOut(data)">Print Out</a>
+        </section>
+    </div>
+
+
+    <script src="../JS/downloadCV.js"></script>
+</body>
+
+</html>

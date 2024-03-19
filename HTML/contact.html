@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../CSS/contact.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <section class="contact-section">
+        <a href="../index.html"><ion-icon name="arrow-back-outline" class="icon"></ion-icon></a>
+
+        <div class="container">
+            <div class="contact-title" data-aos="fade-down" data-aos-duration="1000">
+                <h1>Contact Us</h1>
+                <p>Get in touch with us. We are always here to help you.</p>
+            </div>
+
+            <div class="container-form">
+                <form action="https://formspree.io/f/xjvnewgl" method="POST">
+                    <div class="form-boxs">
+                        <div class="form-box">
+                            <label for="username" data-aos="fade-up" data-aos-duration="2000">Username</label>
+                            <input type="text" data-aos="fade-up" data-aos-duration="3000" id="username" placeholder="Enter your name" required>
+                        </div>
+
+                        <div class="form-box">
+                            <label for="email" data-aos="fade-up" data-aos-duration="2000">Email</label>
+                            <input type="email" data-aos="fade-up" data-aos-duration="3000" placeholder="abc@gmail.com" name="email" required />
+                        </div>
+
+                        <div class="form-box">
+                            <label for="subject" data-aos="fade-up" data-aos-duration="2000">Title</label>
+                            <input type="subject" data-aos="fade-up" data-aos-duration="3000" id="subject" placeholder="Enter your title" name="title" />
+                        </div>
+
+                        <div class="form-box">
+                            <label for="message" data-aos="fade-up" data-aos-duration="2000">Message</label>
+                            <textarea name="message" data-aos="fade-up" data-aos-duration="3000" id="message" placeholder="Type your message" cols="30"
+                                rows="7"></textarea>
+                        </div>
+                    </div>
+                    <div class="btn">
+                        <button type="submit" >Send Message</button>
+                    </div>
+                </form>
+
+                <iframe
+                data-aos="fade-left" data-aos-duration="2000"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56043.9853581436!2d76.93901844630727!3d28.607303278242632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d0fdcb4d53a21%3A0x8800d482f7f39fc0!2sNajafgarh%2C%20Delhi!5e0!3m2!1sen!2sin!4v1710783989486!5m2!1sen!2sin"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+/* ----product----- */
+.products-head-heading{
+    font-size: 3.2rem;
+}
+
+/* -----testimonials----- */
+.testimonials-head-heading{
+font-size: 3.2rem;
+}
+
+.testimonials-head-detail{
+    font-size: 1.2rem;
+}
+
+.testimonials-content-heading{
+    font-size: 2rem;
+}
+
+/* ----gallery----- */
+.gallery-heading{
+    padding: 1rem;
+    font-size: 3.2rem;
+}
+
+.gallery-box{
+    padding: 1rem;
+}
+
+.gallery-box-image{
+    width: 200px;
+    height: 200px;
+}

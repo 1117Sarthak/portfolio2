@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 2px solid red; */
+    font-family: "Montserrat", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    /* top: 200; */
+    scroll-padding-top: 70px;
+    /* position: relative; */
+}
+
+:root {
+    --navbar-height: 59px;
+    --fa-style-family-classic: "Font Awesome 6 Free";
+    --fa-font-solid: normal 900 1em / 1 "Font Awesome 6 Free";
+}
+
+.color{
+    color: #A20C0B;
+}
+
+/* ---Navigation Bar
+SECTION------ */
+#navbar {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: .5rem 2rem;
+    position: sticky;
+    z-index: 1;
+    top: 0px;
+    background: rgba(143, 88, 88, 0.7);
+    background-color: #A20C0B;
+}
+
+#navbar i {
+    display: none;
+    font-size: 2.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+#logo img {
+    cursor: pointer;
+    height: 60px;
+    border: 2px solid whitesmoke;
+    border-radius: 50%;
+}
+
+.navbar-lists {
+    display: flex;
+}
+
+.item {
+    list-style: none;
+    margin: 0px 1.5rem;
+}
+
+.item::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.item:hover::after {
+    width: 100%;
+}
+
+.navbar-link {
+    color: white;
+    /* padding: 5px 10px; */
+    /* border-radius: 20px; */
+    font-size: 2rem;
+    /* font-weight: bold; */
+    /* font-family: sans-serif; */
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+/* -----HOME
+SECTION----- */
+#home {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 89vh;
+    max-height: 700px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    /* background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://fdstatic.foodfood.com/odd/images/Cheese-Stuffed-Potato-Cutlets.jpg")no-repeat center center/cover; */
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("https://wallpaperaccess.com/full/1491879.jpg")no-repeat center center/cover;
+}
+
+/* #home::before {
+    content: "";
+    position: absolute;
+    /* background: url('https://fdstatic.foodfood.com/odd/images/Cheese-Stuffed-Potato-Cutlets.jpg') no-repeat center center/cover; */
+    /* height: 642px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1; */
+    /* opacity: 0.89; */
+/* }  */
+
+#home h1 {
+    text-align: center;
+    font-size: 4rem;
+    /* font-family: 'Poppins', sans-serif; */
+    font-weight: bold;
+    /* margin-bottom: 1rem; */
+}
+
+#home p {
+    text-align: center;
+    font-size: 1.5rem;
+    width: 60%;
+}
+
+.btn {
+    padding: 8px 15px;
+    border: 1px solid transparent;
+    /* font-weight: bold; */
+    background-color: #A20C0B;
+    color: white;
+    /* margin: 17px; */
+    font-size: 1.5rem;
+    /* border-radius: 6px; */
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: orangered;
+}
+
+#home .btn:active {
+    background-color: transparent;
+}
+
+/*----SERVICE 
+SECTION---- */
+.section {
+    padding: 5rem 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.section-heading {
+    font-size: 3.5rem;
+    text-align: center;
+    /* color: #A20C0B; */
+}
+
+#services {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    width: 90%;
+    margin: auto;
+}
+
+#services .box {
+    border: 2px solid brown;
+    padding: 35px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    flex: 31%;
+    transition: 0.3s;
+}
+
+#services .box:hover{
+    box-shadow: 0 0 10px #666;
+    /* filter: scale(95%); */
+    scale: 95%;
+    background-color: #a20c0b;
+    color: white;
+}
+
+#services .box img {
+    height: 200px;
+    width: 200px;
+    box-shadow: 0px 0px 25px #666;
+    border-radius: 50%;
+    margin: auto;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.service-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.service-detail {
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+
+/* ----CLIENT
+SECTION---- */
+#client-section {
+    position: relative;
+    background-image: linear-gradient(rgba(230, 209, 209, 0.7), rgba(230, 209, 209, 0.7)), url("Utlsis/bg3\ \(1\).jpg");
+
+}
+
+/* #client-section::before{
+ content: "";
+ position: absolute;
+ background: url('Utlsis/bg3\ \(1\).jpg');
+ width: 100%;
+ height: 58%;
+ z-index: -1;
+ opacity: 0.3;
+} */
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item {
+    padding: 34px;
+}
+
+.client-item img {
+    height: 124px;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+}
+
+.client-item img:hover{
+    /* height: 100px; */
+    scale: 80%;
+}
+
+/* Contact Section */
+#contact {
+    position: relative;
+}
+
+/* #contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('./Utlsis/contact.jpg') no-repeat center center/cover;
+} */
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box form {
+    width: 50%;
+}
+
+.form-group {
+    /* width: 60%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+#contact-box label {
+    font-size: 1.5rem;
+    color: #A20C0B;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 80%;
+    padding: 1rem;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    outline: none;
+    border: 1px solid #A20C0B;
+    /* color: #A20C0B; */
+}
+
+::placeholder{
+    color: #A20C0B;
+}
+
+form .button-submit{
+    text-align: right;
+    /* display: block; */
+}
+
+.center {
+    text-align: center;
+    background: black;
+    color: white;
+    padding: 10px 0px;
+}

@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@100&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+:root {
+    --d: 5000ms;
+    --angle: 90deg;
+    --gradX: 100%;
+    --gradY: 50%;
+    --c1: yellow;
+    --c2: rgba(168, 239, 255, 0.1);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.icon {
+    position: absolute;
+    z-index: 2;
+    top: 25px;
+    left: 25px;
+    font-size: 3rem;
+    cursor: pointer;
+    color: white;
+    /* background: white; */
+}
+
+.icon:active {
+    color: transparent;
+}
+
+.wrapper {
+    min-height: 100vh;
+    /* background-image:
+        linear-gradient(rgba(26, 17, 36, 0.1), rgba(26, 17, 36, 0.5)),
+        url("https://cdn.wallpapersafari.com/31/30/QiHJZ7.jpg")
+        ; */
+        /* url("https://65designs.com/wp-content/uploads/2020/07/crop.jpg") */
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://wallpapercave.com/wp/v9dkzI3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 50px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 75px;
+}
+
+.image-container {
+    width: 350px;
+    position: relative;
+    border: 0.32rem solid;
+    border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+    border-image: conic-gradient(from var(--angles), var(--c2), var(pink) 0.1turn, var(pink) 0.35turn, var(--c2) 0.65turn) 30;
+    animation: borderRotate var(--d) linear infinite forwards;
+}
+
+/* ----ANIMATION----- */
+@property --angle {
+    syntax: '<angle>';
+    initial-value: 90deg;
+    inherits: true;
+}
+
+@property --gradX {
+    syntax: '<percentage>';
+    initial-value: 50%;
+    inherits: true;
+}
+
+@property --gradY {
+    syntax: '<percentage>';
+    initial-value: 0%;
+    inherits: true;
+}
+
+@keyframes borderRotate {
+    100% {
+        --angle: 420deg;
+    }
+
+    100% {
+        --angles: 320deg;
+    }
+}
+
+/* -----ANIMATION END---- */
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+    /* box-shadow: 20px 20px 0px 10px rgb(199, 198, 198); */
+}
+
+.overlay {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 51, 255, 0.7);
+    /* background: rgba(0, 0, 0, 0.7); */
+    color: white;
+    width: 100%;
+    overflow: hidden;
+    height: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: .5s ease;
+    gap: 10px;
+    /* margin: auto; */
+}
+
+.image-container:hover .overlay {
+    height: 70%;
+}
+
+.img {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.overlay h1 {
+    font-size: 18px;
+}
+
+.overlay p {
+    width: 90%;
+    font-size: 13px;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    gap: 30px
+}
+
+.btn {
+    padding: 7px 15px;
+    font-size: 20px;
+    /* width: 50px; */
+    text-decoration: none;
+    border-radius: 3px;
+    font-weight: bold;
+    color: white;
+    /* text-align: center; */
+    /* margin: 15px; */
+}
+
+.btn:active {
+    background-color: transparent;
+}
+
+#download-btn {
+    background-color: blue;
+}
+
+#download-btn:hover {
+    background-color: rgb(106, 106, 255);
+}
+
+#print-btn {
+    background-color: green;
+}
+
+#print-btn:hover {
+    background-color: rgb(61, 238, 61);
+}
+
+@media screen and (max-width: 700px) {
+    .wrapper {
+        flex-direction: column;
+        gap: 25px;
+
+    }
+
+    .buttons {
+        gap: 10px;
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .image-container {
+        width: 250px;
+    }
+
+    .btn {
+        padding: 5px 10px;
+        font-size: 15px;
+    }
+
+}

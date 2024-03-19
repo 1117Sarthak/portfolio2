@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./CSS/phone.css" media="screen and (max-width: 800px)" />
+    <link rel="stylesheet" href="./CSS/400px.css" media="screen and (max-width: 400px)" />
+</head>
+
+<body id="body">
+    <!-- ========== Start MAIN Section ========== -->
+    <section class="main-interface" id="home">
+        <header class="header">
+            <div class="logo-container">
+                <img src="./IMG/sg logo.png" alt="logo" onclick="darkTheme()" class="logo" data-aos="fade-right" data-aos-duration="1000" id="logo">
+                <div class="logo-hover">
+                    Sarthak Goyal
+                </div>
+            </div>
+
+            <i class="fa-solid fa-bars" onclick="menu()" id="menuBar"></i>
+            <ul class="navbar-lists" id="navbar-lists" data-aos="fade-left" data-aos-duration="1500">
+                <i class="fa-solid fa-xmark"></i>
+                <li class="navbar-list"><a href="#home" class="navbar-link">Home</a></li>
+                <li class="navbar-list"><a href="#about" class="navbar-link">About</a></li>
+                <li class="navbar-list"><a href="#education" class="navbar-link">Education</a></li>
+                <li class="navbar-list"><a href="#gallery" class="navbar-link">Gallery</a></li>
+                <li class="navbar-list"><a href="#contact" class="navbar-link">Social</a></li>
+            </ul>
+        </header>
+
+        <main class="hero">
+            <div class="hero-content" data-aos-duration="1000" data-aos="flip-down">
+                <h1 class="hero-heading">I'm Sarthak a <span class="auto-type"></span>
+                </h1>
+                <p class="hero-detail">Hello, I'm Sarthak, a highly motivated Web Developer with expertise in the MERN
+                    stack. Eager to contribute my skills to a dynamic team and drive success through innovative
+                    solutions.</p>
+                <div class="hero-buttons">
+                    <button class="hero-button" id="btn-buy" data-aos="fade-up" data-aos-duration="1000" onclick="downloadcv()">Download CV</button>
+                    <button class="hero-button" data-aos="fade-up" data-aos-duration="2000" id="btn-discover">Browse Portfolio</button>
+                </div>
+            </div>
+        </main>
+    </section>
+    <!-- ========== End MAIN Section ========== -->
+
+
+
+    <!-- ========== Start Products Section ========== -->
+    <section class="products" id="about"  data-aos="fade-up" data-aos-duration="1000">
+        <div class="products-head">
+            <h2 class="products-head-heading">What Our Student Says</h2>
+        </div>
+
+        <div class="products-boxs">
+            <div class="products-box" data-aos="fade-up" data-aos-duration="1000">
+                <!-- <i class="fa-solid fas fa-home"></i> -->
+                <img src="https://images.pexels.com/photos/18978811/pexels-photo-18978811/free-photo-of-young-redhead-in-a-leather-jacket-and-sunglasses-sitting-on-a-bench.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="" class="product-box-image" />
+                <h3 class="products-box-heading">Christine Berkley</h3>
+                <p class="products-box-detail">This website stands out with its intuitive design, seamless navigation,
+                    and a wealth of informative content, making it a go-to platform for anyone seeking a user-friendly
+                    and enriching online experience.</p>
+                <div class="product-box-ratings">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half"></ion-icon>
+                </div>
+            </div>
+
+            <div class="products-box" data-aos="fade-up" data-aos-duration="2000">
+                <img src="https://images.pexels.com/photos/3649765/pexels-photo-3649765.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="" class="product-box-image" />
+                <h3 class="products-box-heading">David Byer</h3>
+                <p class="products-box-detail">A top-notch website that combines sleek aesthetics with robust
+                    functionality, offering an unparalleled user journey. Its well-curated content and interactive
+                    features make it a standout in its category.</p>
+                <div class="product-box-ratings">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                </div>
+            </div>
+
+            <div class="products-box" data-aos="fade-up" data-aos-duration="3000">
+                <!-- <i class="fa-solid fas fa-phone"></i> -->
+                <img src="https://images.pexels.com/photos/2532766/pexels-photo-2532766.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="" class="product-box-image" />
+                <h3 class="products-box-heading">Steve Jobs</h3>
+                <p class="products-box-detail">The best website in its league, boasting a perfect blend of visually
+                    appealing layout, fast-loading pages, and comprehensive information. A must-visit for those who
+                    prioritize a premium online experience.</p>
+                <div class="product-box-ratings">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ========== End Products Section ========== -->
+
+
+
+    <!-- ========== Start Testimonials Section ========== -->
+    <section class="testimonials" id="education" data-aos="fade-up" data-aos-duration="1500">
+        <div class="testimonials-head">
+            <h2 class="testimonials-head-heading"><span><i class="fa-solid fa-graduation-cap"></i>My</span>
+                Education</h2>
+            <p class="testimonials-head-detail">Education is not the learning of facts, but the training of the mind
+                to think.</p>
+        </div>
+
+        <div class="testimonials-boxs">
+            <div class="testimonials-box" onclick="coll()">
+                <img src="https://images.static-collegedunia.com/public/college_data/images/appImage/16225453761547025916phpFmK8IO.jpeg?tr=c-force"
+                    alt="" class="testimonials-box-image" />
+                <div class="testimonials-content">
+                    <h3 class="testimonials-content-heading">Global Institute of Technology and Management
+                    </h3>
+                    <p class="testimonials-content-detail">College of engineering and research | MDU</p>
+                    <p class="testimonials-content-time">2020-2024 | Pursuing</p>
+                </div>
+            </div>
+
+            <div class="testimonials-box" onclick="sch()">
+                <img src="./IMG/img-school.jpg" alt="" class="testimonials-box-image" />
+                <div class="testimonials-content">
+                    <h3 class="testimonials-content-heading">Govt Boys Senior Secondary School NO-3</h3>
+                    <p class="testimonials-content-detail">School from 6-12 Classes | CBSE</p>
+                    <p class="testimonials-content-time">2018-2020 | Completed</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ========== End Testimonials Section ========== -->
+
+
+
+    <!-- ========== Start Gallery Section ========== -->
+    <section class="gallery" id="gallery">
+        <div class="gallery-head">
+            <h2 class="gallery-heading">Recent Gallery</h2>
+        </div>
+
+        <div class="gallery-boxs" >
+            <div class="gallery-box" data-aos="zoom-in" data-aos-duration="1000">
+                <img src="https://static.s123-cdn-static-c.com/uploads/3851785/2000_5efdc340ed165.jpg" alt=""
+                    class="gallery-box-image" onclick="calculator()" />
+                <div class="gallery-content">
+                    <h3 class="gallery-content-heading">Calculator</h3>
+                    <p class="gallery-content-detail">The calculator allows users to input numerical values, perform
+                        basic arithmetic operations, and see the result on the display. It follows a simple design
+                        to demonstrate the core concepts of building a calculator using web technologies. Keep in
+                        mind that this is a basic example, and in a production environment, additional
+                        considerations, such as input validation and security measures, should be taken into
+                        account.</p>
+                </div>
+            </div>
+
+            <div class="gallery-box"  data-aos="zoom-in" data-aos-duration="2000">
+                <div class="gallery-content">
+                    <h3 class="gallery-content-heading">Weather</h3>
+                    <p class="gallery-content-detail">Weather information is essential for daily life, impacting our
+                        choices and activities. By providing details about temperature, precipitation, and wind
+                        conditions, weather forecasts help individuals plan their daily routines and make informed
+                        decisions. Additionally, weather forecasts are crucial for industries such as agriculture,
+                        transportation, and emergency services, allowing them to prepare for and respond to changing
+                        weather patterns. Overall, access to accurate and timely weather information enhances
+                        safety, facilitates planning, and contributes to the efficiency of various sectors.</p>
+                </div>
+                <img src="https://images.ctfassets.net/pjshm78m9jt4/404080_header/be9f78253f51abce84d1fe29e166b34e/importedImage404080_header"
+                    alt="" class="gallery-box-image float-left" onclick="weather()" />
+            </div>
+
+            <a href="./HTML/projects.html">More than...</a>
+        </div>
+    </section>
+    <!-- ========== End Gallery Section ========== -->
+
+
+
+    <!-- ========== Start Contact Section ========== -->
+    <section class="contact" id="contact"  data-aos="fade-up" data-aos-duration="1000">
+        <div class="contact-content"  data-aos="fade-up" data-aos-duration="1000">
+            <h2 class="contact-heading">Social Media</h2>
+            <p class="contact-detail">Connect with me effortlessly - Message or follow, your choice! The power is in
+                your hands to stay in touch and join the journey</p>
+        </div>
+
+        <div class="contact-boxs">
+            <div class="contact-box" title="Github" onclick="github()" data-aos="flip-left" data-aos-duration="1000">
+                <i class="fa-solid fab fa-github"></i>
+            </div>
+
+            <div class="contact-box" title="Instagram" onclick="instagram()" data-aos="flip-right" data-aos-duration="1000">
+                <i class="fa-solid fab fab fa-instagram"></i>
+            </div>
+
+            <div class="contact-box" title="Twitter" onclick="twitter()" data-aos="flip-left" data-aos-duration="2000">
+                <i class="fa-solid fab fab fa-twitter"></i>
+            </div>
+
+            <div class="contact-box" title="Linkedin" onclick="linkedin()" data-aos="flip-right" data-aos-duration="2000">
+                <i class="fa-solid fab fa-linkedin-in"></i>
+            </div>
+
+            <div class="contact-box" title="G-Mail" onclick="facebook()" data-aos="flip-left" data-aos-duration="3000">
+                <i class="fa-solid fab fa-facebook-f"></i>
+            </div>
+
+            <div class="contact-box" title="Comments" onclick="contact()" data-aos="flip-right" data-aos-duration="3000">
+                <i class="fa-solid fa-comments"></i>
+            </div>
+        </div>
+    </section>
+    <!-- ========== End Contact Section ========== -->
+
+
+    <!-- ========== Start Footer Section ========== -->
+    <footer class="footer">
+        <div class="container">
+            <h3 class="footer-content">&copy;SarthakGoyal 2024. By Sora Templates | DSTB By MyMeal.com</h3>
+            <a href="#home"><i class="fa-solid fas fa-greater-than" title="Go to home"></i></a>
+        </div>
+    </footer>
+    <!-- ========== End Footer Section ========== -->
+    
+<!--  -->
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./JS/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
