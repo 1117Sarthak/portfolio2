@@ -17,6 +17,7 @@
 
 html {
     font-size: 62.5%;
+    overflow: hidden auto;
     /* height: 100%; */
 }
 
@@ -32,7 +33,7 @@ html {
 }
 
 .contact-section {
-    height: 100vh;
+    height: auto;
     width: 100vw;
     display: grid;
     place-items: center;

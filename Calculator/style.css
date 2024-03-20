@@ -4,6 +4,7 @@
     padding:0px;
     font-family:sans-serif;
     box-sizing: border-box;
+    user-select: none;
     /* box-shadow: 0 0 10px #666; */
 }
 body{

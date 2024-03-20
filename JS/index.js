@@ -72,7 +72,7 @@ function linkedin() {
 }
 
 function instagram() {
-    window.open("https://www.instagram.com/");
+    window.open("https://www.instagram.com/sarthak_goyal117/");
 }
 
 function github() {

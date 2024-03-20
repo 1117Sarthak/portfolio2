@@ -3,9 +3,14 @@
 
 }
 
+.logo {
+    width: 5rem;
+}
+
 .header {
     position: relative;
     z-index: 35;
+    height: 6rem;
 }
 
 .navbar-lists {
